@@ -153,7 +153,7 @@ func processVideo(filePath string, ffmpegLogger, statusLogger *log.Logger) (int6
 
 	// Read and log FFmpeg output (to log file only)
 	scanner := bufio.NewScanner(cmdOutput)
-	// Increase the scanner's buffer size (e.g., to 64KB)
+	// Increase the scanner's buffer size (e.g., to 256KB)
 	const maxCapacity = 256 * 1024 // Your required line length
 	buf := make([]byte, maxCapacity)
 	scanner.Buffer(buf, maxCapacity)
