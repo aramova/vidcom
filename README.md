@@ -1,4 +1,4 @@
-```
+
 # Go Video Compressor
 
 This is a Go program that recursively compresses video files (.mp4 and .mov) in a directory and its subdirectories using FFmpeg and the `hevc_videotoolbox` codec (hardware-accelerated on macOS). It includes features like progress display, logging, error handling, and file size comparison.
